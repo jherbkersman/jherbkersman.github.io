@@ -14,7 +14,13 @@ function toggleIcon(e) {
 	// Add show class to other icon
 	addShowToOppisiteOf(icon);
 
-    displayText.innerHTML = 'Congrats, you are now a programmer.';
+    if (icon == unclickedIcon) {
+        displayText.innerHTML = 'Congrats, you are now a programmer.';
+    }
+    else {
+        displayText.innerHTML = 'Darn, you are no longer a programmer.';
+    }
+
 }
 
 // Add show class to the opposite icon
