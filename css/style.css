@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(194, 203, 209);
+}
+
+.content {
+	position: relative;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#clicked-checkbox:hover {
+    cursor: pointer;
+}
+
+#unclicked-checkbox:hover {
+    cursor: pointer;
+}
+
+#description-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+/* Display Utilities */
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
