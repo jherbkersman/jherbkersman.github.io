@@ -1,16 +1,49 @@
 body {
     background-color: rgb(194, 203, 209);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.styled-header {
+    background-color: rgba(47, 47, 66, .9);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-greeting-text {
+    font-size: large;
+    color: rgb(233, 240, 247);
+    margin-left: 25px;
+}
+
+.header-reload-text {
+    font-size: large;
+    color: rgb(233, 240, 247);
+    margin-right: 25px;
+    cursor: pointer;
 }
 
 .content {
 	position: relative;
 	margin: auto;
-    margin-top: 10vh;
+    margin-top: 20vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.bottom-content {
+    margin-top: 1000px;
+    padding-bottom: 25px;
+    text-align: center;
 }
 
 #clicked-checkbox:hover {
@@ -22,7 +55,6 @@ body {
 }
 
 #description-text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3rem;
     margin-top: 3vh;
 }
